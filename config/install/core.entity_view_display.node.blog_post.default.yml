@@ -1,0 +1,41 @@
+# core.entity_view_display.node.blog_post.default.yml
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog_post.body
+    - field.field.node.blog_post.field_publish_date
+    - node.type.blog_post
+  module:
+    - datetime
+    - text
+    - user
+_core:
+  default_config_hash: tON3AcvwbLiQp1pHo8zX_TttrbN3Vf1Wtvp2g6IYGE0
+id: node.blog_post.default
+targetEntityType: node
+bundle: blog_post
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publish_date:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

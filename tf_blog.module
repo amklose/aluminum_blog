@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Top Floor Blog Views module help and theme functions.
+ */
+
+// Store blog preprocess theme functions in a separate .inc file
+\Drupal::moduleHandler()->loadInclude('tf_blog', 'inc', 'tf_blog.theme');
+
+/**
+ * Implements hook_theme().
+ */
+function tf_blog_theme($existing, $type, $theme, $path) {
+  return [
+    'tf_blog' => [
+      'file' => 'tf_blog.theme.inc',
+    ],
+  ];
+}

@@ -1,0 +1,14 @@
+# node.type.blog_post.yml
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - tf_blog
+name: 'Blog post'
+type: blog_post
+description: 'Posts that show up in the blog'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

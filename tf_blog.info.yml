@@ -1,0 +1,7 @@
+name: Top Floor Blog
+type: module
+description: 'Top Floor blog feature with "blog_post" content type and views for display.'
+package: Top Floor Features
+core: '8.x'
+dependencies:
+  - drupal:views
